@@ -18,6 +18,9 @@ public class LambdaTest {
         System.out.println(userInterfaceByOne.get("hehe").getName());
 
 
+
+
+
     }
 
 }
