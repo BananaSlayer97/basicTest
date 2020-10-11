@@ -1,4 +1,4 @@
-package question;
+package sort;
 
 /**
  * @program: basicTest
@@ -6,12 +6,14 @@ package question;
  * @author: 全栈者也
  * @create: 2020 - 10 - 11 15:07
  **/
-public class Test {
+public class Sort {
 
     public static void main(String[] args) {
 
         int[] a = {1,5,6,8,99,21,36};
-        fun(a);
+        //fun(a);
+
+        System.out.println(85>>1);
     }
 
     static  int[] fun(int[] a){
