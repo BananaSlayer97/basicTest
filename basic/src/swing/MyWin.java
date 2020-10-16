@@ -11,16 +11,8 @@ import java.awt.event.ActionListener;
  * @author: 全栈者也
  * @create: 2020 - 10 - 11 16:24
  **/
-public class Test33 {
 
-    public static void main(String[] args) {
-        MyWin w = new MyWin();
-        w.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-    }
-
-}
-
-class MyWin extends JFrame implements ActionListener {
+public  class MyWin extends JFrame implements ActionListener {
     JButton butt = new JButton("连接");
     JTextField text1= new JTextField(10);
     JTextField text2 = new JTextField(10);
