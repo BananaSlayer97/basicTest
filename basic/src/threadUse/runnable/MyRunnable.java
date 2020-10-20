@@ -19,6 +19,7 @@ public class MyRunnable implements  Runnable{
      * 重写 run 方法
      * 创建 MyRunnable 对象
      * 把 创建的 MyRunnable 对象 放入 Thread类，并启动 start
+     * 推荐使用，避免单继承局限性，灵活方便
      */
 
     @Override
