@@ -1,4 +1,4 @@
-package thread;
+package threadUse.thread;
 
 /**
  * @program: basicTest
@@ -8,8 +8,19 @@ package thread;
  **/
 public class MyThread  extends Thread{
 
+    /**
+     *  创建类 继承 Thread 类
+     *  重写 run 方法
+     *  创建 类对象
+     *  调用 start（） 方法
+     *  线程不一定立即执行，由cup 调度安排
+     * @param
+     */
+
+
     public MyThread(String name){
         System.out.println(name);
+
     }
 
     @Override
@@ -20,5 +31,12 @@ public class MyThread  extends Thread{
                 sleep(2000);
             }catch (InterruptedException e){}
         }
+    }
+}
+
+class Main1{
+    public static void main(String[] args) {
+        new MyThread("线程 A").start();
+        new MyThread("线程 B").start();
     }
 }
