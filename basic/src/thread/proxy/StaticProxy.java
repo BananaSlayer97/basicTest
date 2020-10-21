@@ -11,6 +11,8 @@ public class StaticProxy {
     public static void main(String[] args) {
         WeddingCompany weddingCompany = new WeddingCompany(new Man("张飞"));
         weddingCompany.happyMarry();
+
+        new WeddingCompany(new Man("li yang")).happyMarry();
     }
 
 }
