@@ -1,4 +1,4 @@
-package threadUse.thread;
+package thread.thread;
 
 /**
  * @program: basicTest

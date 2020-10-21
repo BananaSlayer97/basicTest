@@ -1,10 +1,12 @@
-package threadUse.thread;
+package thread.thread;
 
 import org.apache.commons.io.FileUtils;
+import thread.callable.MyCallable;
 
 import java.io.File;
 import java.io.IOException;
 import java.net.URL;
+import java.util.concurrent.*;
 
 /**
  * @program: basicTest
@@ -33,6 +35,7 @@ public class DownloadImages extends Thread{
 
 class Main2{
     public static void main(String[] args) {
+
         //创建三个线程
         DownloadImages downloadImages1 = new DownloadImages("https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2033496142,4034319822&fm=26&gp=0.jpg","lyf.jpg");
         DownloadImages downloadImages2 = new DownloadImages("https://dss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3304059237,2085613036&fm=26&gp=0.jpg","dlrb-1.jpg");
@@ -42,6 +45,8 @@ class Main2{
         downloadImages1.start();
         downloadImages2.start();
         downloadImages3.start();
+
+
     }
 }
 

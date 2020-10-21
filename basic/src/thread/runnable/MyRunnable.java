@@ -1,4 +1,4 @@
-package threadUse.runnable;
+package thread.runnable;
 
 /**
  * @program: basicTest
