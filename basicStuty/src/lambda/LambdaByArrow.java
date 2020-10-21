@@ -19,7 +19,6 @@ public class LambdaByArrow {
                 System.out.println(i);
             }
         };
-
         car.name();
 
         /**
@@ -28,6 +27,7 @@ public class LambdaByArrow {
          */
         Car car2 = new Bike();
         car2.name();
+
     }
 }
 
@@ -37,9 +37,11 @@ interface  Car{
 }
 
 /**
- * 接口实现类
+ * 常规接口实现类
  */
 class  Bike implements Car{
     @Override
-    public void name() {}
+    public void name() {
+        System.out.println("default");
+    }
 }

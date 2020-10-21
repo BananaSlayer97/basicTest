@@ -11,13 +11,6 @@ interface UserInterfaceByZero {
     User get();
 }
 
-class  UserInterfaceByZeroChild implements  UserInterfaceByZero{
-    @Override
-    public User get() {
-        return new User("li san");
-    }
-}
-
 @FunctionalInterface
 interface UserInterfaceByOne {
     User get(String name);
