@@ -14,6 +14,7 @@ public class MyThread  extends Thread{
      *  创建 类对象
      *  调用 start（） 方法
      *  线程不一定立即执行，由cup 调度安排
+     *  不建议使用， 避免单继承 的局限性
      * @param
      */
 
