@@ -18,9 +18,6 @@ public class UnsSafeBank {
         you.start();
         girlFriend.start();
     }
-
-
-
 }
 
 class Account{
@@ -49,11 +46,12 @@ class Drawing extends Thread {
         this.drawingMoney = drawingMoney;
     }
 
-    //取钱
     @Override
     public void run() {
-        //判断有没有钱
 
+        /**
+         * 锁的对象就是变化的量
+         */
         synchronized(account){
 
             System.out.println("现在剩余"+account.money);
