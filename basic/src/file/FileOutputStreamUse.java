@@ -1,4 +1,4 @@
-package io.output;
+package file;
 
 import java.io.*;
 
@@ -13,7 +13,6 @@ public class FileOutputStreamUse {
     public static void main(String[] args) throws IOException {
 
        // listDir("d:\\data");
-
         System.out.println(readText());
     }
 
@@ -25,12 +24,14 @@ public class FileOutputStreamUse {
      */
     public static String readText() throws IOException {
         File file = new File("d:\\test.txt");
+
         StringBuilder sb = new StringBuilder();
         BufferedReader br = null;
         br = new BufferedReader(new FileReader(file));
         String temp;
         while ((temp = br.readLine()) != null){
             sb.append(temp);
+            System.out.println(temp);
         }
         br.close();
         return sb.toString();

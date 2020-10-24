@@ -1,4 +1,4 @@
-package io.input;
+package file;
 
 /**
  * @program: basicTest

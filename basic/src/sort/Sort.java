@@ -11,9 +11,10 @@ public class Sort {
     public static void main(String[] args) {
 
         int[] a = {1,5,6,8,99,21,36};
-        //fun(a);
+        int[] fun = fun(a);
+        aLoop(fun);
 
-        System.out.println(85>>1);
+        // System.out.println(85>>1);
     }
 
     static  int[] fun(int[] a){
