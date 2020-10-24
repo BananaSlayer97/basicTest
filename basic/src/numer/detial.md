@@ -1,5 +1,3 @@
-# 法本公司面试题
-
 ### ​BigDecimal
    - Java在java.math包中提供的API类BigDecimal，用来对超过16位有效位的数进行精确的运算
    - 双精度浮点型变量double可以处理16位有效数，但在实际应用中，可能需要对更大或者更小的数进行运算和处理。
@@ -20,4 +18,11 @@
    - 以利用BigDecimal对货币和百分比格式化为例。
    - 首先，创建BigDecimal对象，进行BigDecimal的算术运算后，分别建立对货币和百分比格式化的引用，最后利用BigDecimal对象作为format()方法的参数，输出其格式化的货币值和百分比。
      
+   - NumberFormat ： 处理数值
+   - DecimalFormat： 控制小数点
 
+
+##总结
+  -  在需要精确的小数计算时再使用BigDecimal，BigDecimal的性能比double和float差，在处理庞大，复杂的运算时尤为明显。故一般精度的计算没必要使用BigDecimal。
+  -  尽量使用参数类型为String的构造函数。
+  -  BigDecimal都是不可变的（immutable）的， 在进行每一次四则运算时，都会产生一个新的对象 ，所以在做加减乘除运算时要记得要保存操作后的值。
