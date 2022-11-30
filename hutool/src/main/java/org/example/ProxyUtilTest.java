@@ -2,6 +2,8 @@ package org.example;
 
 import cn.hutool.aop.ProxyUtil;
 import cn.hutool.aop.aspects.TimeIntervalAspect;
+import cn.hutool.system.OsInfo;
+import cn.hutool.system.SystemUtil;
 
 /**
  * @author liu ya
@@ -15,6 +17,9 @@ public class ProxyUtilTest {
 
         Animal cat = ProxyUtil.proxy(new Cat(), TimeIntervalAspect.class);
         cat.eat();
+
+        OsInfo osInfo = SystemUtil.getOsInfo();
+        System.out.println(osInfo);
 
     }
 }
